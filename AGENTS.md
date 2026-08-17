@@ -14,6 +14,8 @@ portfolio at <https://pungrumpy.com>.
    metadata, no decorative motion. Prefer tables for lookup and prose for argument.
 4. **Navigation is explicit.** A new page must be added to the `navigation` groups in `docs.json` or it
    will not appear.
+5. **No per-project pages.** `projects.mdx` is one table covering every project. Depth belongs on the
+   portfolio showcase, not here; link out rather than adding a page.
 
 ## Conventions
 

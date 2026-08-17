@@ -34,8 +34,8 @@ stack.mdx                 languages, frameworks, infrastructure
 experience.mdx            work history
 education.mdx             academic background
 achievements.mdx          programs and certifications, with verification links
-projects/                 catalogue plus one page per project
-writing/                  index of published posts
+projects.mdx              full catalogue, one row per project
+writing.mdx               index of published posts
 reference/discovery.mdx   machine-readable entry points on pungrumpy.com
 reference/colophon.mdx    how this site is built and why
 ```
@@ -43,6 +43,8 @@ reference/colophon.mdx    how this site is built and why
 ## Editing rules
 
 - Facts that disagree with [pungrumpy.com](https://pungrumpy.com) are resolved in favour of the portfolio.
+- Projects are catalogued in one table. Per-project detail lives on the portfolio showcase, and the
+  retired `/projects/<slug>` paths redirect there.
 - Credentials are listed only with a public verification link.
 - Design decisions follow `reference/colophon.mdx`. Read it before adding a component.
 

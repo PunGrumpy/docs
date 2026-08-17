@@ -37,7 +37,7 @@
         ]
       },
       {
-        "group": "Work",
+        "group": "Background",
         "pages": [
           "experience",
           "education",
@@ -45,27 +45,10 @@
         ]
       },
       {
-        "group": "Projects",
+        "group": "Work",
         "pages": [
-          "projects/overview",
-          "projects/docker-doctor",
-          "projects/pigo",
-          "projects/better-commit",
-          "projects/git-bench",
-          "projects/verno-studio",
-          "projects/logixlysia",
-          "projects/og-tester",
-          "projects/zero-link",
-          "projects/kubernetes-automated-load-balancer",
-          "projects/thai-seatizen",
-          "projects/try",
-          "projects/client-work"
-        ]
-      },
-      {
-        "group": "Writing",
-        "pages": [
-          "writing/overview"
+          "projects",
+          "writing"
         ]
       },
       {
@@ -105,11 +88,11 @@
           },
           {
             "label": "Projects",
-            "href": "/projects/overview"
+            "href": "/projects"
           },
           {
             "label": "Writing",
-            "href": "/writing/overview"
+            "href": "/writing"
           },
           {
             "label": "Contact",
@@ -249,6 +232,76 @@
     {
       "source": "/reference/faq",
       "destination": "https://logixlysia.mintlify.app/reference/faq",
+      "permanent": true
+    },
+    {
+      "source": "/projects/docker-doctor",
+      "destination": "https://www.pungrumpy.com/showcase/docker-doctor",
+      "permanent": true
+    },
+    {
+      "source": "/projects/pigo",
+      "destination": "https://www.pungrumpy.com/showcase/pigo",
+      "permanent": true
+    },
+    {
+      "source": "/projects/better-commit",
+      "destination": "https://www.pungrumpy.com/showcase/better-commit",
+      "permanent": true
+    },
+    {
+      "source": "/projects/git-bench",
+      "destination": "https://www.pungrumpy.com/showcase/git-bench",
+      "permanent": true
+    },
+    {
+      "source": "/projects/verno-studio",
+      "destination": "https://www.pungrumpy.com/showcase/verno-studio",
+      "permanent": true
+    },
+    {
+      "source": "/projects/logixlysia",
+      "destination": "https://www.pungrumpy.com/showcase/logixlysia",
+      "permanent": true
+    },
+    {
+      "source": "/projects/og-tester",
+      "destination": "https://www.pungrumpy.com/showcase/og-tester",
+      "permanent": true
+    },
+    {
+      "source": "/projects/zero-link",
+      "destination": "https://www.pungrumpy.com/showcase/zero-link",
+      "permanent": true
+    },
+    {
+      "source": "/projects/kubernetes-automated-load-balancer",
+      "destination": "https://www.pungrumpy.com/showcase/kubernetes-automated-load-balancer",
+      "permanent": true
+    },
+    {
+      "source": "/projects/thai-seatizen",
+      "destination": "https://www.pungrumpy.com/showcase/thai-seatizen",
+      "permanent": true
+    },
+    {
+      "source": "/projects/try",
+      "destination": "https://www.pungrumpy.com/showcase/try",
+      "permanent": true
+    },
+    {
+      "source": "/projects/client-work",
+      "destination": "https://www.pungrumpy.com/showcase",
+      "permanent": true
+    },
+    {
+      "source": "/projects/overview",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/writing/overview",
+      "destination": "/writing",
       "permanent": true
     }
   ]
