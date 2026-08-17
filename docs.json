@@ -47,7 +47,7 @@
       {
         "group": "Projects",
         "pages": [
-          "projects/index",
+          "projects/overview",
           "projects/docker-doctor",
           "projects/pigo",
           "projects/better-commit",
@@ -65,7 +65,7 @@
       {
         "group": "Writing",
         "pages": [
-          "writing/index"
+          "writing/overview"
         ]
       },
       {
@@ -106,11 +106,11 @@
           },
           {
             "label": "Projects",
-            "href": "/projects/index"
+            "href": "/projects/overview"
           },
           {
             "label": "Writing",
-            "href": "/writing/index"
+            "href": "/writing/overview"
           }
         ]
       },
