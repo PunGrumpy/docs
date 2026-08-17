@@ -41,9 +41,13 @@ code {
   font-variant-numeric: tabular-nums;
 }
 
-/* Prose stays inside a comfortable measure; tables and code are exempt. */
-#content-area p,
-#content-area li {
+/*
+ * Prose stays inside a comfortable measure; tables and code are exempt.
+ * The platform renders MDX paragraphs as block-level spans rather than <p>,
+ * so the rule targets the body's own top-level blocks.
+ */
+#content > :is(span, p),
+#content li {
   max-width: var(--pg-measure);
 }
 
@@ -51,7 +55,7 @@ code {
  * Links inside prose carry an underline. Colour alone is not an affordance,
  * and the palette here is monochrome by design.
  */
-#content-area :is(p, li, td) > a {
+#content :is(span, p, li, td) > a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
