@@ -93,8 +93,7 @@
   "footer": {
     "socials": {
       "github": "https://github.com/PunGrumpy",
-      "website": "https://pungrumpy.com",
-      "email": "mailto:hello@pungrumpy.com"
+      "website": "https://pungrumpy.com"
     },
     "links": [
       {
@@ -111,6 +110,10 @@
           {
             "label": "Writing",
             "href": "/writing/overview"
+          },
+          {
+            "label": "Contact",
+            "href": "mailto:hello@pungrumpy.com"
           }
         ]
       },
