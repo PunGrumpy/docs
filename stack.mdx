@@ -1,0 +1,46 @@
+---
+title: "Stack"
+description: "Languages, frameworks, infrastructure, and tooling PunGrumpy builds with, and the reasoning behind each choice."
+---
+
+The stack is deliberately narrow. Fewer tools used well beat many tools used occasionally, and most of
+the projects on this site reuse the same foundation so that improvements compound.
+
+## Languages
+
+| Language | Used for |
+| --- | --- |
+| TypeScript | Product surfaces, CLIs, plugins, and most published packages |
+| Go | Compute-heavy work and single-binary tooling, including the Pigo image backend |
+
+## Frameworks and runtimes
+
+| Tool | Used for |
+| --- | --- |
+| Next.js | Application and marketing surfaces across nearly every shipped project |
+| Bun | Runtime and package management for TypeScript work |
+| ElysiaJS | The server framework that Logixlysia plugs into |
+
+## Infrastructure
+
+| Tool | Used for |
+| --- | --- |
+| Kubernetes | Orchestration, including the GitOps load balancing project |
+| Docker | Local and CI container workflows, and the subject of Docker Doctor |
+| Terraform | Infrastructure as code |
+| Helm | Kubernetes packaging and releases |
+| OpenShift | Platform work during the IBM Thailand internship |
+
+## Delivery
+
+| Tool | Used for |
+| --- | --- |
+| GitHub Actions | CI, release automation, and deployment workflows |
+| Turborepo | Monorepo task orchestration and caching |
+| Vercel | Hosting for most published project surfaces |
+
+## Editor
+
+Cursor, with terminal tooling doing the rest. The dotfiles and Neovim themes in the
+[GitHub profile](https://github.com/PunGrumpy?tab=repositories) are part of the same habit: the editor is
+a tool you are allowed to sharpen.

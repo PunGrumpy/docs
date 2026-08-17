@@ -1,0 +1,47 @@
+---
+title: "Docker Doctor"
+description: "Opinionated static analysis CLI for Dockerfile and Docker Compose files: 21+ rules across security, performance, and image size, reported as a 0 to 100 health score."
+---
+
+Docker Doctor is an opinionated static analysis CLI for Dockerfile and Docker Compose files. It runs 21
+or more rules across security, performance, best practices, Compose, and image size, then reports a 0 to
+100 health score with fix guidance.
+
+| Field | Value |
+| --- | --- |
+| Year | 2026 |
+| Category | Open source, developer tools |
+| Audience | Everyone |
+| Repository | [github.com/PunGrumpy/docker-doctor](https://github.com/PunGrumpy/docker-doctor) |
+| Live | [docker-doctor.vercel.app](https://docker-doctor.vercel.app) |
+| Showcase | [pungrumpy.com/showcase/docker-doctor](https://www.pungrumpy.com/showcase/docker-doctor) |
+
+## The design decision
+
+Most container linters return a list of complaints. A list has no shape: a Dockerfile with two critical
+findings and one with fourteen minor ones look equally red, and neither tells a team whether last week's
+cleanup helped. Docker Doctor answers a different question first. It returns a score, and the rules
+underneath the score are what makes the number auditable rather than arbitrary.
+
+Scoring is a claim, so the rules have to carry it. Twenty-one or more of them span five families:
+
+| Rule family | Concern |
+| --- | --- |
+| Security | Root users, secret handling, unpinned bases |
+| Performance | Layer ordering and cache invalidation |
+| Best practices | Instruction hygiene and maintainability |
+| Compose | Multi-service configuration issues |
+| Image size | Build weight and what ships to production |
+
+Each finding carries fix guidance, so the score can be moved deliberately rather than by trial.
+
+## Companion work
+
+A benchmarks repository scores popular open source repositories against the same rules, published as a
+[leaderboard](https://docker-doctor.vercel.app/leaderboard). It doubles as regression testing for the
+rule set: if a rule is wrong, it is wrong loudly and in public.
+
+## Further reading
+
+The reasoning is written up in
+[Docker Doctor: a health score for your Dockerfiles](https://www.pungrumpy.com/blog/docker-doctor-health-score).

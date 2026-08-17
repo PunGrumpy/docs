@@ -1,0 +1,40 @@
+---
+title: "Better Commit"
+description: "One configuration file and a single CLI so that developers and AI tools ship consistent commit messages without ad hoc scripts, hooks, or CI glue."
+---
+
+Better Commit helps you and your AI tools ship consistent commit messages without juggling ad hoc
+scripts. One config file, one CLI, and a working setup in minutes.
+
+| Field | Value |
+| --- | --- |
+| Year | 2026 |
+| Category | Open source, developer tools |
+| Audience | Everyone |
+| Repository | [github.com/PunGrumpy/better-commit](https://github.com/PunGrumpy/better-commit) |
+| Live | [better-commit.vercel.app](https://better-commit.vercel.app) |
+| Showcase | [pungrumpy.com/showcase/better-commit](https://www.pungrumpy.com/showcase/better-commit) |
+
+## What it provides
+
+| Capability | Detail |
+| --- | --- |
+| Single configuration | One file defines the convention for the whole repository |
+| Unified CLI | Invoked as `bc` or `better-commit` |
+| Agent support | The same convention applies to AI tools writing commits |
+| Hooks and CI | Enforcement at commit time and in the pipeline |
+| Documentation | Setup and configuration reference on the project site |
+
+## Why a config file and not a convention document
+
+Commit conventions fail in a specific way. The rule is written in a contributing guide, half enforced by
+a commit-msg hook someone copied in 2023, and quietly ignored by every tool that generates commits
+automatically. Once agents are writing commits too, the gap widens: the convention lives in prose that
+the agent may or may not have read.
+
+Better Commit collapses that into a single artefact. The config is the convention, the CLI reads it, the
+hook enforces it, and CI checks it. Agents get the same input as humans because there is only one input.
+
+## Related
+
+[Git Bench](/projects/git-bench) came out of the same period of working close to git internals.

@@ -1,0 +1,32 @@
+---
+title: "Pigo"
+description: "Zero-configuration image optimizer for JPEG, PNG, and WebP with near-zero dependencies, powered by a Go backend running the compression work in the browser."
+---
+
+Pigo compresses JPEG, PNG, and WebP images with zero configuration and near-zero dependencies. Drop
+files in, get smaller files out, powered by a Go backend that does the heavy lifting in the browser.
+
+| Field | Value |
+| --- | --- |
+| Year | 2026 |
+| Category | Open source, full-stack |
+| Audience | Everyone |
+| Repository | [github.com/PunGrumpy/pigo](https://github.com/PunGrumpy/pigo) |
+| Live | [pigo.pungrumpy.com](https://pigo.pungrumpy.com) |
+| Showcase | [pungrumpy.com/showcase/pigo](https://www.pungrumpy.com/showcase/pigo) |
+
+## The constraint that shaped it
+
+Two constraints, held strictly: minimal dependencies and minimal configuration. Both are unusual for
+image tooling, where the normal answer is a service, an API key, and a quality parameter the user is
+expected to tune.
+
+Running the Go compression work in the browser is what makes the constraints hold together. Nothing is
+uploaded, so there is no service to authenticate against and no privacy question to answer. The absence
+of a settings panel is the product, not an omission: a tool that requires a quality slider has moved its
+hardest decision onto the person least equipped to make it.
+
+## Related
+
+[Docker Doctor](/projects/docker-doctor) and [Better Commit](/projects/better-commit) share the same
+premise applied elsewhere: choose the sane default, then defend it.

@@ -1,0 +1,35 @@
+---
+title: "OG Tester"
+description: "Tool for testing and validating Open Graph and Twitter Card metadata, with a scan report, recommendations, and a CLI for pipeline checks."
+---
+
+OG Tester is a tool for testing and validating Open Graph and Twitter Card metadata for websites.
+
+| Field | Value |
+| --- | --- |
+| Year | 2024 |
+| Category | Open source, developer tools |
+| Audience | Everyone |
+| Repository | [github.com/PunGrumpy/og-tester](https://github.com/PunGrumpy/og-tester) |
+| Live | [og.pungrumpy.com](https://og.pungrumpy.com) |
+| Showcase | [pungrumpy.com/showcase/og-tester](https://www.pungrumpy.com/showcase/og-tester) |
+
+## Surfaces
+
+| Surface | Purpose |
+| --- | --- |
+| Scan report | What the crawlers will actually see for a given URL |
+| Recommendations | What is missing or malformed, and what to set instead |
+| CLI | The same check, runnable in a pipeline |
+
+## The failure it addresses
+
+Social metadata fails silently. Nothing in a build breaks when `og:image` points at a 404, and the first
+signal is usually a link shared in public that renders as a grey rectangle. Validation has to happen
+before the share, which is why the CLI matters more than the web form: a check that only exists as a
+website is a check that runs after the mistake.
+
+## Related
+
+The same instinct produced [Docker Doctor](/projects/docker-doctor) two years later: move the check
+earlier, and give it an interface a pipeline can use.

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "PunGrumpy",
+  "description": "Engineering reference for Noppakorn Kaewsalabnil (PunGrumpy): profile, work history, projects, writing, and credentials, written for humans and agents.",
+  "colors": {
+    "primary": "#0A0A0A",
+    "light": "#EDEDED",
+    "dark": "#0A0A0A"
+  },
+  "appearance": {
+    "default": "system",
+    "strict": true
+  },
+  "fonts": {
+    "heading": {
+      "family": "Geist"
+    },
+    "body": {
+      "family": "Geist"
+    }
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://pungrumpy.com"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": ["index", "profile", "stack"]
+      },
+      {
+        "group": "Work",
+        "pages": ["experience", "education", "achievements"]
+      },
+      {
+        "group": "Projects",
+        "pages": [
+          "projects/index",
+          "projects/docker-doctor",
+          "projects/pigo",
+          "projects/better-commit",
+          "projects/git-bench",
+          "projects/verno-studio",
+          "projects/logixlysia",
+          "projects/og-tester",
+          "projects/zero-link",
+          "projects/kubernetes-automated-load-balancer",
+          "projects/thai-seatizen",
+          "projects/try",
+          "projects/client-work"
+        ]
+      },
+      {
+        "group": "Writing",
+        "pages": ["writing/index"]
+      },
+      {
+        "group": "Reference",
+        "pages": ["reference/discovery", "reference/colophon"]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/PunGrumpy"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "pungrumpy.com",
+      "href": "https://pungrumpy.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/PunGrumpy",
+      "website": "https://pungrumpy.com",
+      "email": "mailto:hello@pungrumpy.com"
+    },
+    "links": [
+      {
+        "header": "Site",
+        "items": [
+          { "label": "Profile", "href": "/profile" },
+          { "label": "Projects", "href": "/projects/index" },
+          { "label": "Writing", "href": "/writing/index" }
+        ]
+      },
+      {
+        "header": "Elsewhere",
+        "items": [
+          { "label": "Portfolio", "href": "https://pungrumpy.com" },
+          { "label": "Showcase", "href": "https://pungrumpy.com/showcase" },
+          { "label": "Logixlysia docs", "href": "https://logixlysia.mintlify.app" }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "prompt": "Search this reference"
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
+  },
+  "seo": {
+    "indexing": "all"
+  }
+}

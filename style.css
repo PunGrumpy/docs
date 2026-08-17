@@ -1,0 +1,58 @@
+/*
+ * Restraint layer. Monochrome, quiet surfaces, evidence-first tables.
+ * Follows the composition rules in /reference/colophon.
+ */
+
+:root {
+  --pg-measure: 68ch;
+}
+
+/* Tabular numerals wherever numbers are compared: dates, counts, scores. */
+table,
+time,
+code {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tables are evidence, not decoration: full width, aligned, quiet rules. */
+#content-area table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#content-area table th {
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Numeric columns read right-aligned so digits stack. */
+#content-area table td[align='right'],
+#content-area table th[align='right'] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Prose stays inside a comfortable measure; tables and code are exempt. */
+#content-area p,
+#content-area li {
+  max-width: var(--pg-measure);
+}
+
+/* Headings are statements, not ornaments. */
+#content-area h1,
+#content-area h2,
+#content-area h3 {
+  letter-spacing: -0.015em;
+}
+
+/* Stillness by default. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

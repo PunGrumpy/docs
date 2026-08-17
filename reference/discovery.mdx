@@ -1,0 +1,44 @@
+---
+title: "Discovery surfaces"
+description: "Machine-readable entry points across pungrumpy.com: llms.txt, agents.md, Markdown sitemaps, the agent skills index, and the RFC 9727 API catalog."
+---
+
+pungrumpy.com is built to be read by agents as well as people. The surfaces below are stable entry
+points; prefer them to scraping rendered HTML.
+
+## Entry points
+
+| Surface | URL | Use for |
+| --- | --- | --- |
+| Full site context | [llms.txt](https://www.pungrumpy.com/llms.txt) | Complete context in one file |
+| Agent profile | [agents.md](https://www.pungrumpy.com/agents.md) | Agent-ready profile and navigation maps |
+| Sitemap, Markdown | [sitemap.md](https://www.pungrumpy.com/sitemap.md) | Navigation with titles and summaries |
+| Sitemap, XML | [sitemap.xml](https://www.pungrumpy.com/sitemap.xml) | Search engine indexing |
+| Agent skills index | [.well-known/agent-skills/index.json](https://www.pungrumpy.com/.well-known/agent-skills/index.json) | Declared agent skills |
+| API catalog | [.well-known/api-catalog](https://www.pungrumpy.com/.well-known/api-catalog) | RFC 9727 catalog |
+| Crawl rules | [robots.txt](https://www.pungrumpy.com/robots.txt) | Crawling policy |
+
+## Content negotiation
+
+Pages serve Markdown when requested with an `Accept: text/markdown` header. Blog posts additionally
+resolve raw Markdown by appending `.md` to the post URL, for example
+`https://www.pungrumpy.com/blog/docker-doctor-health-score.md`. Showcase pages do not currently expose
+the `.md` suffix; use content negotiation or `llms.txt` for those.
+
+## Stated agent instructions
+
+The site publishes its own guidance for agents:
+
+- Use `/sitemap.md` for navigation.
+- Use `/llms.txt` for complete context.
+- Append `.md` to blog post URLs for raw Markdown.
+- Do not assume API support unless it is listed.
+
+That last rule is worth restating, because it is the one most often broken. The catalog is the contract.
+Endpoints absent from it are absent.
+
+## This site
+
+This documentation exposes the same conveniences through Mintlify: per-page Markdown copy, and direct
+handoff into ChatGPT or Claude from the page header. The canonical source for everything here remains
+[pungrumpy.com](https://pungrumpy.com).

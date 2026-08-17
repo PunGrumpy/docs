@@ -1,0 +1,36 @@
+---
+title: "Git Bench"
+description: "Benchmarks git client implementations across six real-world repository operations, from status and log to reading blobs, with reproducible scripted runs."
+---
+
+Git Bench benchmarks git client implementations on real-world repository operations.
+
+| Field | Value |
+| --- | --- |
+| Year | 2026 |
+| Category | Open source, developer tools |
+| Audience | Everyone |
+| Repository | [github.com/PunGrumpy/git-bench](https://github.com/PunGrumpy/git-bench) |
+| Live | [git-benchmark.vercel.app](https://git-benchmark.vercel.app) |
+| Showcase | [pungrumpy.com/showcase/git-bench](https://www.pungrumpy.com/showcase/git-bench) |
+
+## The six operations
+
+| Operation | What it measures |
+| --- | --- |
+| Current branch | Cheapest possible ref read |
+| Status | Working tree comparison against the index |
+| Log, 100 entries | Commit traversal and object reads |
+| Tracked files | Full index enumeration |
+| Changed files | Diff computation against HEAD |
+| Read 25 blobs | Object store read throughput |
+
+The set is chosen so that the numbers mean something to a tool author. These are the calls a git-backed
+application actually makes in a loop: a status bar polling branch and status, a review tool listing
+changed files, a build system reading blobs. A benchmark of clone times would be easier to run and would
+answer a question nobody has while writing an editor extension.
+
+## Reproducibility
+
+Runs are scripted rather than hand-driven, which is the only way a comparison across implementations
+survives the first disagreement about methodology.

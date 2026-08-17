@@ -1,0 +1,51 @@
+---
+title: "Logixlysia"
+description: "Open source structured logging plugin for ElysiaJS with file rotation, custom transports, PII redaction, request context, and OpenTelemetry support."
+---
+
+Logixlysia is an open source logging plugin built for the ElysiaJS framework. It provides structured HTTP
+request logging, file logging with rotation, custom transports, PII redaction, and OpenTelemetry support,
+with no required configuration.
+
+| Field | Value |
+| --- | --- |
+| Year | 2023, maintained since |
+| Category | Open source, developer tools |
+| Audience | Everyone |
+| Repository | [github.com/PunGrumpy/logixlysia](https://github.com/PunGrumpy/logixlysia) |
+| Live | [logixlysia.vercel.app](https://logixlysia.vercel.app) |
+| Documentation | [logixlysia.mintlify.app](https://logixlysia.mintlify.app) |
+| Showcase | [pungrumpy.com/showcase/logixlysia](https://www.pungrumpy.com/showcase/logixlysia) |
+
+Adoption stands at 264 GitHub stars as of August 2026, making it the most used project in this
+catalogue.
+
+## Capabilities
+
+| Capability | Detail |
+| --- | --- |
+| Structured request logging | Every HTTP request emitted as a structured record |
+| File logging | Persist to disk with configurable paths |
+| Rotation | By size, age, or both, with retention and gzip |
+| Transports | Forward to Elasticsearch, Slack, MongoDB, or a custom sink |
+| Redaction | Emails, IPs, card numbers, and JWTs stripped by default |
+| Request context | Accumulate fields during a request into one wide event |
+| Request ID | Generated, propagated, and attached to response headers |
+| OpenTelemetry | Trace and span IDs injected into log lines |
+| WebSocket | Open, message, and close events logged alongside HTTP |
+
+## Why redaction is a default and not an option
+
+A logging library that ships redaction as an opt-in feature has decided, on behalf of every user, that
+the first incident is acceptable. Logixlysia inverts that: the denylist covers the usual leak paths out
+of the box, and extending it is the configuration, not enabling it.
+
+The same reasoning explains the wide-event model. Emitting one rich record per request rather than
+scattered lines is what makes logs answer questions later, and it only works if accumulating context
+during a request is easy enough that people bother.
+
+## Documentation history
+
+The docs moved from Fumadocs to Blume, written up in
+[Docs are content again](https://www.pungrumpy.com/blog/moving-logixlysia-from-fumadocs-to-blume). The
+current hosted reference lives at [logixlysia.mintlify.app](https://logixlysia.mintlify.app).
