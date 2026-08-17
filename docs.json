@@ -9,8 +9,7 @@
     "dark": "#0A0A0A"
   },
   "appearance": {
-    "default": "system",
-    "strict": true
+    "default": "system"
   },
   "fonts": {
     "heading": {

@@ -26,6 +26,15 @@ code {
   white-space: nowrap;
 }
 
+/*
+ * Cells size to their content. The platform floors every cell at 150px, which
+ * forces equal columns: a four-character year claims the same width as a
+ * sentence, and the sentence wraps into a ribbon.
+ */
+#content-area table :is(th, td) {
+  min-width: 0;
+}
+
 /* Numeric columns read right-aligned so digits stack. */
 #content-area table td[align='right'],
 #content-area table th[align='right'] {
@@ -36,6 +45,16 @@ code {
 #content-area p,
 #content-area li {
   max-width: var(--pg-measure);
+}
+
+/*
+ * Links inside prose carry an underline. Colour alone is not an affordance,
+ * and the palette here is monochrome by design.
+ */
+#content-area :is(p, li, td) > a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 /* Headings are statements, not ornaments. */
