@@ -4,7 +4,12 @@
  */
 
 :root {
-  --pg-measure: 68ch;
+  /*
+   * Target measure is 60-68 characters. The ch unit resolves against the "0"
+   * advance, which in Geist is a third wider than the average character, so
+   * 68ch measures about 90 characters of running text. 33rem lands at 66.
+   */
+  --pg-measure: 33rem;
 }
 
 /* Tabular numerals wherever numbers are compared: dates, counts, scores. */
