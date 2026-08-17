@@ -22,8 +22,8 @@ points; prefer them to scraping rendered HTML.
 
 Pages serve Markdown when requested with an `Accept: text/markdown` header. Blog posts additionally
 resolve raw Markdown by appending `.md` to the post URL, for example
-`https://www.pungrumpy.com/blog/docker-doctor-health-score.md`. Showcase pages do not currently expose
-the `.md` suffix; use content negotiation or `llms.txt` for those.
+`https://www.pungrumpy.com/blog/docker-doctor-health-score.md`. Showcase pages do not currently
+expose the `.md` suffix; use content negotiation or `llms.txt` for those.
 
 ## Stated agent instructions
 
@@ -34,11 +34,11 @@ The site publishes its own guidance for agents:
 - Append `.md` to blog post URLs for raw Markdown.
 - Do not assume API support unless it is listed.
 
-That last rule is worth restating, because it is the one most often broken. The catalog is the contract.
-Endpoints absent from it are absent.
+That last rule is worth restating, because it is the one most often broken. The catalog is the
+contract. Endpoints absent from it are absent.
 
 ## This site
 
-This documentation exposes the same conveniences through Mintlify: per-page Markdown copy, and direct
-handoff into ChatGPT or Claude from the page header. The canonical source for everything here remains
-[pungrumpy.com](https://pungrumpy.com).
+This documentation exposes the same conveniences through Mintlify: per-page Markdown copy, and
+direct handoff into ChatGPT or Claude from the page header. The canonical source for everything here
+remains [pungrumpy.com](https://pungrumpy.com).
