@@ -30,11 +30,19 @@
     "groups": [
       {
         "group": "Overview",
-        "pages": ["index", "profile", "stack"]
+        "pages": [
+          "index",
+          "profile",
+          "stack"
+        ]
       },
       {
         "group": "Work",
-        "pages": ["experience", "education", "achievements"]
+        "pages": [
+          "experience",
+          "education",
+          "achievements"
+        ]
       },
       {
         "group": "Projects",
@@ -56,11 +64,16 @@
       },
       {
         "group": "Writing",
-        "pages": ["writing/index"]
+        "pages": [
+          "writing/index"
+        ]
       },
       {
         "group": "Reference",
-        "pages": ["reference/discovery", "reference/colophon"]
+        "pages": [
+          "reference/discovery",
+          "reference/colophon"
+        ]
       }
     ]
   },
@@ -87,17 +100,35 @@
       {
         "header": "Site",
         "items": [
-          { "label": "Profile", "href": "/profile" },
-          { "label": "Projects", "href": "/projects/index" },
-          { "label": "Writing", "href": "/writing/index" }
+          {
+            "label": "Profile",
+            "href": "/profile"
+          },
+          {
+            "label": "Projects",
+            "href": "/projects/index"
+          },
+          {
+            "label": "Writing",
+            "href": "/writing/index"
+          }
         ]
       },
       {
         "header": "Elsewhere",
         "items": [
-          { "label": "Portfolio", "href": "https://pungrumpy.com" },
-          { "label": "Showcase", "href": "https://pungrumpy.com/showcase" },
-          { "label": "Logixlysia docs", "href": "https://logixlysia.mintlify.app" }
+          {
+            "label": "Portfolio",
+            "href": "https://pungrumpy.com"
+          },
+          {
+            "label": "Showcase",
+            "href": "https://pungrumpy.com/showcase"
+          },
+          {
+            "label": "Logixlysia docs",
+            "href": "https://logixlysia.mintlify.app"
+          }
         ]
       }
     ]
@@ -106,9 +137,116 @@
     "prompt": "Search this reference"
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   },
   "seo": {
     "indexing": "all"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/introduction",
+      "destination": "https://logixlysia.mintlify.app/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/quickstart",
+      "destination": "https://logixlysia.mintlify.app/quickstart",
+      "permanent": true
+    },
+    {
+      "source": "/installation",
+      "destination": "https://logixlysia.mintlify.app/installation",
+      "permanent": true
+    },
+    {
+      "source": "/concepts/presets",
+      "destination": "https://logixlysia.mintlify.app/concepts/presets",
+      "permanent": true
+    },
+    {
+      "source": "/concepts/log-levels",
+      "destination": "https://logixlysia.mintlify.app/concepts/log-levels",
+      "permanent": true
+    },
+    {
+      "source": "/concepts/request-context",
+      "destination": "https://logixlysia.mintlify.app/concepts/request-context",
+      "permanent": true
+    },
+    {
+      "source": "/features/file-logging",
+      "destination": "https://logixlysia.mintlify.app/features/file-logging",
+      "permanent": true
+    },
+    {
+      "source": "/features/log-rotation",
+      "destination": "https://logixlysia.mintlify.app/features/log-rotation",
+      "permanent": true
+    },
+    {
+      "source": "/features/transports",
+      "destination": "https://logixlysia.mintlify.app/features/transports",
+      "permanent": true
+    },
+    {
+      "source": "/features/request-id",
+      "destination": "https://logixlysia.mintlify.app/features/request-id",
+      "permanent": true
+    },
+    {
+      "source": "/features/redaction",
+      "destination": "https://logixlysia.mintlify.app/features/redaction",
+      "permanent": true
+    },
+    {
+      "source": "/features/formatting",
+      "destination": "https://logixlysia.mintlify.app/features/formatting",
+      "permanent": true
+    },
+    {
+      "source": "/features/websocket",
+      "destination": "https://logixlysia.mintlify.app/features/websocket",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/opentelemetry",
+      "destination": "https://logixlysia.mintlify.app/integrations/opentelemetry",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/ai-sdk",
+      "destination": "https://logixlysia.mintlify.app/integrations/ai-sdk",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/pino",
+      "destination": "https://logixlysia.mintlify.app/integrations/pino",
+      "permanent": true
+    },
+    {
+      "source": "/reference/configuration",
+      "destination": "https://logixlysia.mintlify.app/reference/configuration",
+      "permanent": true
+    },
+    {
+      "source": "/reference/api",
+      "destination": "https://logixlysia.mintlify.app/reference/api",
+      "permanent": true
+    },
+    {
+      "source": "/reference/migration",
+      "destination": "https://logixlysia.mintlify.app/reference/migration",
+      "permanent": true
+    },
+    {
+      "source": "/reference/faq",
+      "destination": "https://logixlysia.mintlify.app/reference/faq",
+      "permanent": true
+    }
+  ]
 }
